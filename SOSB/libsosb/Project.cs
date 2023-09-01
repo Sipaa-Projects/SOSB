@@ -9,6 +9,8 @@ namespace LibSOSB;
 public class Project
 {
     public string Name = "name";
+    public string Type = "limine";
+    public string BootloaderConfigPath = "kernel/limine.cfg";
     public string KernelSourceDir = "kernel/src";
     public string KernelBinDir = "kernel/bin";
     public string KernelExecutable = "kernel/bin/kernel.elf";
@@ -25,6 +27,7 @@ public class Project
     public string LinkerFlags = "";
     public string AssemblerPath = "nasm";
     public string AssemblerFlags = "";
+    public string OutputISOFile = "kernel/bin/kernel.iso";
 
     public ProjectLanguage Language = ProjectLanguage.StandardC;
 }

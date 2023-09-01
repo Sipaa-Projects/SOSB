@@ -16,5 +16,7 @@
   "LinkerFlags": "-nostdlib -z max-page-size=0x1000",
   "AssemblerPath": "nasm",
   "AssemblerFlags": "-f elf64",
+  "Type": "limine",
+  "OutputISOFile": "kernel/bin/kernel.iso",
   "Language": 1
 }
