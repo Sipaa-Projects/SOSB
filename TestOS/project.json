@@ -1,0 +1,20 @@
+{
+  "Name": "TestOS",
+  "KernelSourceDir": "kernel/src",
+  "KernelBinDir": "kernel/bin",
+  "KernelExecutable": "kernel/bin/kernel.elf",
+  "KernelLinkFile": "kernel/link.ld",
+  "KernelObjectDir": "kernel/obj",
+  "CPPTarget": "x86_64-elf-",
+  "CTarget": "x86_64-elf-",
+  "CPPCompilerPath": "g++",
+  "CPPCompilerFlags": "-w -Dlimine -std=gnu++11 -ffreestanding -fno-stack-protector -fpermissive -fno-stack-check -fno-lto -fno-PIE -fno-PIC -m64 -Ikernel/src/ -march=x86-64 -mabi=sysv -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel",
+  "CCompilerPath": "gcc",
+  "CCompilerFlags": "-w -Dlimine -std=gnu++11 -ffreestanding -fno-stack-protector -fpermissive -fno-stack-check -fno-lto -fno-PIE -fno-PIC -m64 -Ikernel/src/ -march=x86-64 -mabi=sysv -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel",
+  "LinkerTarget": "x86_64-elf-",
+  "LinkerPath": "ld",
+  "LinkerFlags": "-nostdlib -z max-page-size=0x1000",
+  "AssemblerPath": "nasm",
+  "AssemblerFlags": "-f elf64",
+  "Language": 1
+}
